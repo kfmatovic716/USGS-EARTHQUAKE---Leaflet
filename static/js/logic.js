@@ -120,11 +120,8 @@ d3.json(earthquakeAllWeek).then(function(data) {
     div.innerHTML += "<h4>Earthquake Depth:</h4>";
     for (var i=0; i < grades.length; i++) {
       div.innerHTML +=  
-        '<i style="background: ' + 
-        setColor(grades[i] + 1) + 
-        '"></i>' +
-        grades[i] + 
-        (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+        '<i style="background: ' + setColor(grades[i] + 1) + '"></i>' +
+        grades[i] + (grades[i + 1] ? '&ndash;' + (grades[i + 1]-1) + '<br>' : '+');
     }
     return div;
   };
@@ -154,8 +151,8 @@ function setRadius(mag) {
  d3.json(tectonicPlateUrl).then(function(plateData) {
   // Create an L.geoJson() that reads the plateData, and sets some options per your choosing 
      L.geoJson(plateData, {
-       color: "#cc0000",
-       weight: 3
+       color: "#ac7339",
+       weight: 1
      })
 // use .addTo() to add the l.geoJson layer to the tectonicPlates LayerGroup
      .addTo(tectonicPlates);
