@@ -1,5 +1,5 @@
 # USGS-EARTHQUAKE---Leaflet
 
-<img src="images/outdoor.PNG" />
-<img src="images/satellite.PNG" />
-<img src="images/bw.PNG" />
+<img src="images/outdoor.png" />
+<img src="images/satellite.png" />
+<img src="images/bw.png" />
